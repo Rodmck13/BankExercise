@@ -35,6 +35,7 @@ public class Account
         if(TransactionArray.size()== 5){
             TransactionArray.remove(0);
             TransactionArray.add(new Transactions(0,  acc_number,  dateFormat.format(date),  type,  amount, desc));
+
         }else{
             TransactionArray.add(new Transactions(0,  acc_number,  dateFormat.format(date),  type,  amount, desc));
         }
@@ -44,9 +45,55 @@ public class Account
         ArrayList  a = TransactionArray;
         return a;
     }
-    public String GetSpecificTransactions(int i)
+    public String GetSpecificTransactions(double ValorEuro, double ValorPeso, int CurrentRate)
     {
-        String a= TransactionArray.get(i).getDesc_Tran();
+        String a="";
+        switch(CurrentRate) {
+            case 0:
+                for (int i=0;i<TransactionArray.size();i++){
+                    a += "[Account No. : "+TransactionArray.get(i).getAccNum_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getDate_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getDesc_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getType_Tran() +"]"+"[ $"
+                            +TransactionArray.get(i).getAmount_Tran() +" dlls ]\n";
+                }
+                System.out.println("* The amounts are based on dollar, to change it go to option 5 of the menu");
+
+                break;
+            case 1:
+                for (int i=0;i<TransactionArray.size();i++){
+                    a += "[Account No. : "+TransactionArray.get(i).getAccNum_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getDate_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getDesc_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getType_Tran() +"]"+"[ €"
+                            +TransactionArray.get(i).getAmount_Tran()*ValorEuro +" EUR]\n";
+                }
+                System.out.println("* The amounts are based on EUR, to change it go to option 5 of the menu");
+                break;
+            case 2:
+                for (int i=0;i<TransactionArray.size();i++){
+                    a += "[Account No. : "+TransactionArray.get(i).getAccNum_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getDate_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getDesc_Tran() +"]"+"[ "
+                            +TransactionArray.get(i).getType_Tran() +"]"+"[ $"
+                            +TransactionArray.get(i).getAmount_Tran()*ValorPeso +" MXN]\n";
+                }
+                System.out.println("* The amounts are based on MXN, to change it go to option 5 of the menu");
+                break;
+        }
+
+
+
+
+      /*  for (int i=0;i<TransactionArray.size();i++){
+            a += "[Account No. : "+TransactionArray.get(i).getAccNum_Tran() +"]"+"[ "
+                    +TransactionArray.get(i).getDate_Tran() +"]"+"[ "
+                    +TransactionArray.get(i).getDesc_Tran() +"]"+"[ "
+                    +TransactionArray.get(i).getType_Tran() +"]"+"[ $"
+                    +TransactionArray.get(i).getAmount_Tran() +"]\n";
+        }*/
+        System.out.println("[Current Balance: $"+Current_balance+"]");
+
         return a;
     }
     public String getAcc_number() {
@@ -77,7 +124,7 @@ public class Account
             Current_balance = Current_balance - amount;
         }
         else{
-            System.out.println("Fondos insuficientes");
+            System.out.println("Insufficient funds");
         }
     }
     public double GetBalance(){
