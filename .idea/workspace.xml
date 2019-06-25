@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f54a9ae3-bb47-410b-9ef3-51e1ee96d8b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Bank/ExchangeRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BankAccountExample.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Bank/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bank/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bank/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Bank/DataRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bank/DataRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Bank/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Bank/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Bank/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Bank/Bank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Bank/DataRead.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Bank/DataRead.class" afterDir="false" />
-    </list>
+    <list default="true" id="f54a9ae3-bb47-410b-9ef3-51e1ee96d8b2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -233,7 +221,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561437991148" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561438238670" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -310,6 +298,14 @@
       <option name="presentableId" value="Default" />
       <updated>1560958044950</updated>
     </task>
+    <task id="LOCAL-00001" summary="Exchange Rate API added">
+      <created>1561438059578</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561438059578</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -323,7 +319,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -339,10 +334,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.89689034" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.89689034" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.049099836" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Maven" order="2" weight="0.13958333" />
@@ -380,6 +375,10 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" visible="true" weight="0.13250366" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Exchange Rate API added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exchange Rate API added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
